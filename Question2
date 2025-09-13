@@ -1,0 +1,18 @@
+package w1_LabPractical1;
+import java.util.Scanner; //Scanner tool. This tool allows us to input things from the keyboard, such as numbers
+
+public class Question2 { //class name Question2
+	public static void main(String[] args) {  //This is the main function, where the program starts running
+		Scanner input = new Scanner(System.in); //Running the new Scanner tool
+		
+		System.out.print("Enter a number: "); //This will show a text on the screen and ask you to enter the first number
+		int number = input.nextInt(); ////This tells the computer to save the first number you enter on the keyboard and name it number
+		
+		if (number % 2 == 0) { //It is a judgment statement and % means to take the remainder, If the remainder of the number when divided by 2 is 0, it means it is an even number.
+			System.out.println(number + " is Even."); //If it's an even number, display "[this number] is Even."
+		} else { //If the remainder is not 0, it means it is an odd number
+			System.out.println(number + " is Odd."); //display "[this number] is odd."
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+package w1_LabPractical1;
+import java.util.Scanner; //Scanner tool. This tool allows us to input things from the keyboard, such as numbers
+
+public class Question1 { //The class of SimpleAddition. Every Java program must have a class but my class name Question 1 so i had to use that class name
+	public static void main(String[] args) { //This is the main function, where the program starts running
+		Scanner input = new Scanner(System.in); //Running the new Scanner tool
+		
+		System.out.print("Enter first number: "); //This will show a text on the screen and ask you to enter the first number
+		int num1 = input.nextInt(); //This tells the computer to save the first number you enter on the keyboard and name it num1
+		
+		System.out.print("Enter second number: "); //This will display another text and ask you to enter the second number
+		int num2 = input.nextInt(); //This saves the second number you enter on the keyboard and names it num2
+		
+		int sum = num1 + num2; //This adds the two numbers num1 and num2 and stores the result in a new variable called sum.
+		System.out.println("The sum is: " + sum); //shows the calculated numbers
+	}
+}
